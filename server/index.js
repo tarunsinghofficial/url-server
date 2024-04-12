@@ -15,7 +15,7 @@ connectDB();
 const PORT = process.env.PORT || 5001;
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: "*",
     credentials: true,
     methods: "GET, POST, PUT, HEAD, DELETE, PATCH"
 }))
